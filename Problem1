@@ -1,0 +1,10 @@
+b = balance
+a = annualInterestRate
+m = monthlyPaymentRate
+
+i=1
+while i<=12:
+    b= b-b*m+(b-b*m)*a/12
+    i+=1
+
+print("Remaining balance:", round(b,2))
